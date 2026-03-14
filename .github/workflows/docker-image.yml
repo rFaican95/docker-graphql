@@ -28,5 +28,5 @@ jobs:
         docker build -t rfaican/docker-graphql:0.0.2 .
     - name: Push Docker Image
       run: |
-        docker push rfaican/docker-graphql:0.0.2 .
+        docker push rfaican/docker-graphql:0.0.2
     
