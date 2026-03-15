@@ -41,7 +41,7 @@ jobs:
         docker build -t rfaican/docker-graphql:latest .
     
     - name: Push Docker Image
-    env:
+      env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         docker push rfaican/docker-graphql:$NEW_VERSION
